@@ -1,0 +1,63 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "Raleway-Regular", Verdana, sans-serif;
+  src: local("Raleway-Regular"), url("raleway/Raleway-Regular.ttf"), format("ttf");
+}
+header, section, footer{
+  width: 100%;
+}
+header{
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 40px;
+  font-family: "Raleway-Regular";
+}
+nav{
+  float: right;
+}
+span{
+  color: rgb(36, 186, 159);
+}
+.main_width{
+  width: 1000px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.logo{
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.menu{
+  list-style: none;
+  padding: 10px;
+  float: left;
+  position: relative;
+}
+.menu>li{
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.fold{
+  visibility: hidden;
+  list-style: none;
+  padding: 10px;
+  position: absolute;
+  background-color: black;
+  margin-top: 40px;
+}
+.menu:first-child:hover .fold{
+  visibility: visible;
+}
+.fold>li{
+  padding: 5px;
+}
