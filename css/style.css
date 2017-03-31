@@ -39,6 +39,19 @@ footer{
   height: 50px;
   color: grey;
 }
+img{
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.slider ul{
+    list-style: none;
+}
+.slider li{
+    display: none;
+}
+.slider .visible{
+    display: inline-block;
+}
 .main_width{
   width: 1000px;
   margin: 0 auto;
@@ -73,16 +86,16 @@ footer{
     font-weight: 800;
 }
 .fold{
-  visibility: hidden;
+  display: none;
   list-style: none;
   padding: 10px;
   position: absolute;
   background-color: black;
   margin-top: 30px;
 }
-.menu:first-child:hover .fold{
+/*.menu:first-child:hover .fold{
   visibility: visible;
-}
+} */
 .fold>li{
   padding: 2px;
 }
@@ -96,6 +109,7 @@ footer{
   display: inline-block;
   float: left;
   cursor: pointer;
+  padding-right: 110px;
 }
 .gradient{
   background: -webkit-linear-gradient(top, #f5f6f6 52%,#dbdce2 99%,#b8bac6 100%,#f5f6f6 100%,#b8bac6 100%); /* Chrome10-25,Safari5.1-6 */
@@ -119,7 +133,7 @@ footer{
   display: inline-block;
   float:left;
   margin-top: 100px;
-  margin-left: 80px;
+  margin-left: 10px;
   margin-bottom: 100px;
 }
 .btn{
@@ -149,12 +163,14 @@ footer{
   box-sizing: border-box;
   padding: 20px;
   padding-left: 50px;
+  font-weight: 900;
+  font-size: 34px;
 }
 .marker2{
   color: rgb(36, 186, 159);
   width: 50px;
   box-sizing: border-box;
-  margin-top: 200px;
+  margin-top: -250px;
   font-weight: bold;
   font-size: 50px;
   display: inline-block;
@@ -163,6 +179,7 @@ footer{
 }
 .height300{
   height: 330px;
+  margin-top: 25px;
 }
 .box1{
   width: 320px;
@@ -196,7 +213,7 @@ footer{
   opacity: .4;
   z-index: 2;
   margin-top: 150px;
-
+  display: block;
 }
 .strap{
   height: 10px;
